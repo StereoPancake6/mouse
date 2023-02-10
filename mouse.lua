@@ -1,4 +1,15 @@
-
+local Settings = {
+	Aimpart = "HumanoidRootPart", "Head", "UpperTorso",
+	Humanoid = "Humanoid",
+	NeckOffSet = Vector3.new(0,tonumber(1),0);
+	Resolver = true,
+	FOV_Visible = true,
+	FOV_Radius = 250 ,
+	Smoothness = 4,
+	Prediction = true,
+	Rejoin_Key = "=",
+	Toggle_Key = "E",
+};
 
         if Settings.Prediction == true then
             local pingvalue = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
